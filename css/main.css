@@ -1,0 +1,440 @@
+body, h1, h2 ,h3, h4, h5, h6, p {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.none {
+    display: none;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1140px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+#game-field {
+    width: 1472px;
+    height: 704px;
+}
+
+.hr-object {
+    width: 97%;
+}
+
+/* HEADER SECTION */
+
+.header {
+    height: 100vh;
+    width: 100%;
+
+    background-size: cover;
+
+    background: url(/img/header-snake.jpg) center no-repeat;
+    position: relative;
+
+
+    background-size: cover;
+    display: flex;
+    flex-direction: column; 
+    justify-content: bottom;
+    align-items: center;
+}
+
+.icon-arrow {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+
+    transform: translate(-50%, 0);
+    cursor: pointer;
+}
+
+
+/* INFO BLOCK SECTION */
+
+.section-info-block {
+    height: 575px;
+}
+
+.info-container {
+    display:  flex;
+    justify-content: space-between;
+    text-align: center;
+    padding: 0 30px;
+    width: 1472px;
+}
+
+.main-info-block {
+    display: flex;
+    justify-content: center;
+}
+
+.main-info-block h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+}
+
+.paragraph-info {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    text-align: center;
+    font-size: 36px;
+}
+
+.info-title {
+    padding-bottom: 65px;
+}
+
+.info-block {
+    padding-top: 173px;
+}
+
+.info-block:nth-child(1){
+    width: 388px;
+}
+.info-block:nth-child(3){
+    width: 439px;
+}
+
+/* KEYBOARD BLOCK */
+
+.keybord-block{
+    align-items: center;
+    text-align: center;
+    cursor: default;
+}
+
+.keybord-block h2 {
+    font-size: 64px;
+    margin-bottom: 67px;
+}
+
+.keybord-block {
+    padding-top: 117px;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+}
+
+.key {
+    height: 101px;
+    width: 101px;
+    border: black 4px solid;
+    border-radius: 10px;
+    margin-left: 25px;
+
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+
+    font-family: Calibri;
+    font-weight: 700;
+    font-size: 73px;
+}
+
+
+.key:nth-child(2) {
+   margin-bottom: 23px;
+   margin-left: 0;
+}
+
+.key:nth-child(1) {
+    margin-left: 0;
+    margin-right: 26px;
+}
+
+
+.keys-block {
+    height: 227px;
+    display: flex;
+    flex-direction: row;
+}
+
+/* RESTART-BTN & FULLSCREEN-BTN */
+
+.wrapper-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.restart-btn {
+    display: flex;
+    align-items: center;
+    border: black 2px solid;
+    border-radius: 10px;
+    padding: 10px 24px;
+    
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-right: 85px;
+
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+.restart-btn:hover {
+    background-color: #DDDDDD;
+}
+
+.restart-btn p {
+    font-size: 38px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+.icon-fullscreen {
+    width: 48px;
+    height: 48px;
+    margin-right: 50px;
+    cursor: pointer;
+}
+
+
+/* SNAKE GAME */
+
+.snake-game {
+    justify-content: center;
+    display: flex;
+    padding-bottom: 50px;
+    padding-top: 10px;
+}
+
+/* FOOTER */
+
+footer {
+    font-family: Bahnschrift , sans-serif;
+    padding-top: 45px;
+    padding-bottom: 130px;
+    margin-top: 150px;
+    background: #121212;
+    color: #fff;
+}
+
+.footer-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footer-col {
+    max-width: 350px;
+}
+
+.footer-copyright {
+    max-width: 350px;
+    line-height: 1.3;
+    color:#fff;
+    margin-left: 10px;
+}
+
+.footer-copyright-name {
+    font-weight: 700px;
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.footer-copyright p {
+    margin-bottom: 15px;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.footer-icons-row {
+    display: flex;
+    align-items: center;
+}
+
+.footer-icons p {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.3;
+    margin-bottom: 15px;
+}
+
+.footer-icons-row > * + * {
+    margin-left: 15px;
+}
+
+.social-icons {
+    transition: transform 0.2s ease-in-out;
+}
+
+.social-icons:hover {
+    transform: translateY(-10px);
+}
+
+.footer-button {
+    display: inline-block;
+
+    border: 2.2px solid #fff;
+    box-sizing: border-box;
+    border-radius: 50px;
+    padding: 10px;
+    color: #fff;
+    text-decoration: none;
+
+    transition: all 0.2s ease-in;
+}
+
+.footer-button:hover {
+    background-color: #fff;
+    color: #121212;
+}
+
+.footer-contact p {
+    margin: 15px 0;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.3;
+    color: #eaeaea;
+}
+
+/* SMALL DISPLAYS MESSAGE */
+
+.small-displays {
+    display: none;
+    padding: 50px 50px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* MEDIA REQUESTS */
+
+/* Media request for screen size it's less 1500px */
+@media (max-width: 1500px) {
+    #game-field {
+        width: 1204px;
+        height: 550px;
+    }
+
+    .info-container {
+        width: 1248px;
+    }
+
+    .main-info-block h2 {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 30px;
+    }
+    
+    .paragraph-info {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        text-align: center;
+        font-size: 26px;
+    }
+    
+    .info-title {
+        padding-bottom: 65px;
+    }
+    
+    .info-block {
+        padding-top: 173px;
+        
+    }
+    
+    .info-block:nth-child(1){
+        width: 300px;
+        padding-left: 5px;
+        padding-right: 50px;
+    }
+    .info-block:nth-child(3){
+        padding-left: 50px;
+        width: 300px;
+    }
+
+    /* KEYBOARD BLOCK */
+
+    .keybord-block h2 {
+        font-size: 40px;
+        margin-bottom: 67px;
+    }
+
+    .keybord-block {
+        padding-top: 117px;
+        justify-content: space-between;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .key {
+        height: 84px;
+        width: 84px;
+        border: black 4px solid;
+        border-radius: 10px;
+        margin-left: 25px;
+
+        display: flex; 
+        flex-direction: column;
+        justify-content: center;
+
+        font-family: Calibri;
+        font-weight: 700;
+        font-size: 64px;
+    }
+
+
+    .key:nth-child(2) {
+    margin-bottom: 23px;
+    margin-left: 0;
+    }
+
+    .key:nth-child(1) {
+        margin-left: 0;
+        margin-right: 26px;
+    }
+
+    /* CONTAINER */
+
+    .container {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 1020px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    
+}
+
+
+
+/* Media request for screen size it's less 1204px */
+@media (max-width: 1204px) {
+    .header {
+        display: none;
+    }
+
+    .section-info-block {
+        display: none;
+    }
+
+    .btn-section {
+        display: none;
+    }
+
+    .snake-game {
+        display: none;
+    }
+
+    .footer {
+        display: none;
+    }
+
+    .small-displays {
+        display: flex;
+    }
+
+    .hr-object {
+        display: none;
+    }
+}
+
+

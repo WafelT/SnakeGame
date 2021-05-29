@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Snake</title>
+    <link rel="shortcut icon" href="/img/domein-icon/snake-icon-domen.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/main.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+</head>
+<body>
+    <!-- MESSAGE FOR SCREEN SIZE IT'S LESS 1472px -->
+    <div class="small-displays">
+        <p>Sorry, this site does not support your size screen :(</p>
+    </div>
+
+    <!-- HEADER -->
+    <header class="header">
+        <a href="#section-info-block">
+            <img class="icon-arrow" src="/img/icons/down-arrow1.png" alt="JustArrow">
+        </a>
+    </header>
+
+
+    <!-- INFO, ABOUT PROJECT -->
+    <section class="section-info-block" id="section-info-block">
+        <div class="main-info-block">
+            <div class="info-container">
+                <div class="info-block">
+                    <h2 class="info-title">About Game</h2>
+                    <p class="paragraph-info">
+                        It’s a common snake 
+                        game. You need to
+                        eat apples to grow.
+                        That’s all</p>
+                </div>
+    
+                <div class="keybord-block">
+                    <h2>Use to play</h2>
+                        <div class="key">W</div>
+                    <div class="keys-block">
+                        <div class="key">A</div>
+                        <div class="key">S</div>
+                        <div class="key">D</div>
+                    </div>
+                </div>
+    
+                <div class="info-block">
+                    <h2 class="info-title">In Future</h2>
+                    <p class="paragraph-info">
+                        Now, the project is
+                        a simple game, in future
+                        maybe you can find
+                        different modes here. 
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <hr class="hr-object">
+
+
+    <!-- FULLSCREEN BUTTON, RESTART BTN -->
+    <section class="btn-section">
+        
+        <div class="wrapper-buttons">
+            <a href="#snake-game">
+                <img src="/img/icons/icons-full-screen.svg" alt="Fullscreen" class="icon-fullscreen">
+            </a>
+            
+                <div class="restart-btn" id="restart-btn" onclick="pageReload()">
+                    <img src="/img/icons/btn_restart.svg" alt="restartIcon" class="restart-icon">
+                    <p>Restart</p>
+                </div>
+        </div>
+    </section>
+
+
+    <!-- GAME-FIELD,(CANVAS) -->
+    <section class="snake-game" id="snake-game">
+        <div class="game-grid">
+            <canvas id="game-field" width="1472" height="704"></canvas>
+        </div>
+    </section>
+    
+    <hr class="hr-object">
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-row">
+                <div class="footer-copyright">
+
+                    <!-- footer copyright -->
+                   <div class="footer-copyright-name footer-col">&#9400 WafelT</div>
+                   <p>Layout and development</p>
+                </div>
+                    <!-- //footer copyright -->
+
+                    <!-- footer icons-->
+                <div class="footer-icons footer-col">
+                    <p>My profiles in social webs:</p>
+                    <div class="footer-icons-row"> 
+                        <a class="social-icons" href="https://habr.com/ru/users/wafelt/">
+                            <img src="./img/social-icons/habr.svg" alt="icons">
+                        </a>
+                        <a class="social-icons" href="https://github.com/WafelT">
+                            <img src="./img/social-icons/github.svg" alt="icons">  
+                        </a>
+                    </div>
+                </div>
+                    <!-- footer icons-->
+
+                <div class="footer-contact footer-col">
+                    <a href="https://mail.google.com/mail/u/0/?tab=km#inbox?compose=GTvVlcSDbFbKztpKLgjXjHmMcdhWDFcHwhCCKwgXmZqLWQQWVgBScvzvlhzVDnhFzDcpdKWdrrxGc" class="footer-button">Contact by Mail</a>
+                    <p>Write me, for more information</p>
+                </div>
+
+            </div>
+        </div>
+
+    </footer>
+
+    <script src="js/default-game.js"></script>
+</body>
+</html>
